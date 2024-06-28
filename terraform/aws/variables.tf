@@ -21,7 +21,7 @@ variable "app_count" {
 variable "aws_region" {
   type        = string
   description = "AWS Region"
-  default     = "us-west-2"
+  default     = "eu-west-1"
 }
 
 variable "aws_cloudwatch_retention_in_days" {
@@ -61,7 +61,7 @@ variable "database_password" {
 
 variable "docker_image" {
   description = "Docker image url used in ECS task."
-  default     = "mageai/mageai:alpha"
+  default     = "mageai/mageai:latest"
   type        = string
 }
 
@@ -87,7 +87,7 @@ variable "private_subnets" {
 
 variable "availability_zones" {
   description = "List of availability zones"
-  default     = ["us-west-2a", "us-west-2b"]
+  default     = ["eu-west-1a", "eu-west-1b"]
 }
 
 variable "enable_ci_cd" {
